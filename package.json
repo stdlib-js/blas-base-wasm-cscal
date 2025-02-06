@@ -1,5 +1,5 @@
 {
-  "name": "@stdlib/blas-base-cscal-wasm",
+  "name": "@stdlib/blas-base-wasm-cscal",
   "version": "0.0.0",
   "description": "Scale a single-precision complex floating-point vector by a single-precision complex floating-point constant.",
   "license": "Apache-2.0",
@@ -36,7 +36,7 @@
   "homepage": "https://stdlib.io",
   "repository": {
     "type": "git",
-    "url": "git://github.com/stdlib-js/blas-base-cscal-wasm.git"
+    "url": "git://github.com/stdlib-js/blas-base-wasm-cscal.git"
   },
   "bugs": {
     "url": "https://github.com/stdlib-js/stdlib/issues"

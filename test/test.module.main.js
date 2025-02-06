@@ -133,7 +133,7 @@ tape( 'a module instance has a `main` method which supports specifying a `cx` st
 	cxp = 0;
 	cap = 48;
 
-	xbuf = new Float32Array( [
+	xbuf = new Float32Array([
 		0.1,  // 1
 		0.1,  // 1
 		3.0,
@@ -146,13 +146,13 @@ tape( 'a module instance has a `main` method which supports specifying a `cx` st
 		-0.3, // 3
 		7.0,
 		2.0
-	] );
+	]);
 	cx = new Complex64Array( xbuf.buffer );
 
 	mod.write( cxp, cx );
 	mod.write( cap, new Float32Array( [ 0.4, -0.7 ] ) );
 
-	cxe = new Float32Array( [
+	cxe = new Float32Array([
 		0.11,  // 1
 		-0.03, // 1
 		3.0,
@@ -165,7 +165,7 @@ tape( 'a module instance has a `main` method which supports specifying a `cx` st
 		-0.19, // 3
 		7.0,
 		2.0
-	] );
+	]);
 
 	mod.main( 3, cap, cxp, 2 );
 
@@ -197,7 +197,7 @@ tape( 'a module instance has a `main` method which supports specifying a negativ
 	cxp = 0;
 	cap = 48;
 
-	xbuf = new Float32Array( [
+	xbuf = new Float32Array([
 		0.1,  // 3
 		0.1,  // 3
 		3.0,
@@ -210,13 +210,13 @@ tape( 'a module instance has a `main` method which supports specifying a negativ
 		-0.3, // 1
 		7.0,
 		2.0
-	] );
+	]);
 	cx = new Complex64Array( xbuf.buffer );
 
 	mod.write( cxp, cx );
 	mod.write( cap, new Float32Array( [ 0.4, -0.7 ] ) );
 
-	cxe = new Float32Array( [
+	cxe = new Float32Array([
 		0.11,  // 3
 		-0.03, // 3
 		3.0,
@@ -229,7 +229,7 @@ tape( 'a module instance has a `main` method which supports specifying a negativ
 		-0.19, // 1
 		7.0,
 		2.0
-	] );
+	]);
 
 	mod.main( 3, cap, cxp, -2 );
 

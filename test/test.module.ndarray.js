@@ -133,7 +133,7 @@ tape( 'a module instance has an `ndarray` method which supports a `cx` stride', 
 	cxp = 0;
 	cap = 48;
 
-	xbuf = new Float32Array( [
+	xbuf = new Float32Array([
 		0.1,  // 1
 		0.1,  // 1
 		3.0,
@@ -146,13 +146,13 @@ tape( 'a module instance has an `ndarray` method which supports a `cx` stride', 
 		-0.3, // 3
 		7.0,
 		2.0
-	] );
+	]);
 	cx = new Complex64Array( xbuf.buffer );
 
 	mod.write( cxp, cx );
 	mod.write( cap, new Float32Array( [ 0.4, -0.7 ] ) );
 
-	cxe = new Float32Array( [
+	cxe = new Float32Array([
 		0.11,  // 1
 		-0.03, // 1
 		3.0,
@@ -165,7 +165,7 @@ tape( 'a module instance has an `ndarray` method which supports a `cx` stride', 
 		-0.19, // 3
 		7.0,
 		2.0
-	] );
+	]);
 
 	mod.ndarray( 3, cap, cxp, 2, 0 );
 
@@ -197,7 +197,7 @@ tape( 'a module instance has an `ndarray` method which supports a negative `cx` 
 	cxp = 0;
 	cap = 48;
 
-	xbuf = new Float32Array( [
+	xbuf = new Float32Array([
 		0.1,  // 3
 		0.1,  // 3
 		3.0,
@@ -210,13 +210,13 @@ tape( 'a module instance has an `ndarray` method which supports a negative `cx` 
 		-0.3, // 1
 		7.0,
 		2.0
-	] );
+	]);
 	cx = new Complex64Array( xbuf.buffer );
 
 	mod.write( cxp, cx );
 	mod.write( cap, new Float32Array( [ 0.4, -0.7 ] ) );
 
-	cxe = new Float32Array( [
+	cxe = new Float32Array([
 		0.11,  // 3
 		-0.03, // 3
 		3.0,
@@ -229,7 +229,7 @@ tape( 'a module instance has an `ndarray` method which supports a negative `cx` 
 		-0.19, // 1
 		7.0,
 		2.0
-	] );
+	]);
 
 	mod.ndarray( 3, cap, cxp, -2, 4 );
 
@@ -261,7 +261,7 @@ tape( 'a module instance has an `ndarray` method which supports a `cx` offset', 
 	cxp = 0;
 	cap = 48;
 
-	xbuf = new Float32Array( [
+	xbuf = new Float32Array([
 		0.1,
 		0.1,
 		3.0,
@@ -274,13 +274,13 @@ tape( 'a module instance has an `ndarray` method which supports a `cx` offset', 
 		-0.3, // 2
 		7.0,
 		2.0
-	] );
+	]);
 	cx = new Complex64Array( xbuf.buffer );
 
 	mod.write( cxp, cx );
 	mod.write( cap, new Float32Array( [ 0.4, -0.7 ] ) );
 
-	cxe = new Float32Array( [
+	cxe = new Float32Array([
 		0.1,
 		0.1,
 		3.0,
@@ -293,7 +293,7 @@ tape( 'a module instance has an `ndarray` method which supports a `cx` offset', 
 		-0.19, // 2
 		7.0,
 		2.0
-	] );
+	]);
 
 	mod.ndarray( 2, cap, cxp, 2, 2 );
 
@@ -378,7 +378,7 @@ tape( 'a module instance has an `ndarray` method which supports complex access p
 	cxp = 0;
 	cap = 48;
 
-	xbuf = new Float32Array( [
+	xbuf = new Float32Array([
 		0.1,
 		0.1,
 		3.0,
@@ -391,13 +391,13 @@ tape( 'a module instance has an `ndarray` method which supports complex access p
 		-0.3, // 1
 		7.0,
 		2.0
-	] );
+	]);
 	cx = new Complex64Array( xbuf.buffer );
 
 	mod.write( cxp, cx );
 	mod.write( cap, new Float32Array( [ 0.4, -0.7 ] ) );
 
-	cxe = new Float32Array( [
+	cxe = new Float32Array([
 		0.1,
 		0.1,
 		3.0,
@@ -410,7 +410,7 @@ tape( 'a module instance has an `ndarray` method which supports complex access p
 		-0.19, // 1
 		7.0,
 		2.0
-	] );
+	]);
 
 	mod.ndarray( 2, cap, cxp, -2, 4 );
 

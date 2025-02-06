@@ -77,7 +77,7 @@ tape( 'the `ndarray` method scales elements from `cx` by `ca`', function test( t
 	var ca;
 	var cx;
 
-	cx = new Complex64Array( [
+	cx = new Complex64Array([
 		0.3, // 1
 		0.1, // 1
 		0.5, // 2
@@ -90,13 +90,13 @@ tape( 'the `ndarray` method scales elements from `cx` by `ca`', function test( t
 		3.0,
 		2.0,
 		3.0
-	] );
+	]);
 	ca = new Complex64( 0.4, -0.7 );
 
 	cscal.ndarray( 4, ca, cx, 1, 0 );
 
 	viewX = new Float32Array( cx.buffer );
-	expected = new Float32Array( [
+	expected = new Float32Array([
 		0.19,  // 1
 		-0.17, // 1
 		0.2,   // 2
@@ -109,7 +109,7 @@ tape( 'the `ndarray` method scales elements from `cx` by `ca`', function test( t
 		3.0,
 		2.0,
 		3.0
-	] );
+	]);
 	isApprox( t, viewX, expected, 1.0 );
 
 	t.end();
@@ -121,7 +121,7 @@ tape( 'the `ndarray` method supports specifying a `cx` stride', function test( t
 	var ca;
 	var cx;
 
-	cx = new Complex64Array( [
+	cx = new Complex64Array([
 		0.1,  // 1
 		0.1,  // 1
 		3.0,
@@ -134,13 +134,13 @@ tape( 'the `ndarray` method supports specifying a `cx` stride', function test( t
 		-0.3, // 3
 		7.0,
 		2.0
-	] );
+	]);
 	ca = new Complex64( 0.4, -0.7 );
 
 	cscal.ndarray( 3, ca, cx, 2, 0 );
 
 	viewX = new Float32Array( cx.buffer );
-	expected = new Float32Array( [
+	expected = new Float32Array([
 		0.11,  // 1
 		-0.03, // 1
 		3.0,
@@ -153,7 +153,7 @@ tape( 'the `ndarray` method supports specifying a `cx` stride', function test( t
 		-0.19, // 3
 		7.0,
 		2.0
-	] );
+	]);
 	isApprox( t, viewX, expected, 1.0 );
 
 	t.end();
@@ -165,7 +165,7 @@ tape( 'the `ndarray` method supports specifying a negative `cx` stride', functio
 	var ca;
 	var cx;
 
-	cx = new Complex64Array( [
+	cx = new Complex64Array([
 		0.1,  // 3
 		0.1,  // 3
 		3.0,
@@ -178,13 +178,13 @@ tape( 'the `ndarray` method supports specifying a negative `cx` stride', functio
 		-0.3, // 1
 		7.0,
 		2.0
-	] );
+	]);
 	ca = new Complex64( 0.4, -0.7 );
 
 	cscal.ndarray( 3, ca, cx, -2, 4 );
 
 	viewX = new Float32Array( cx.buffer );
-	expected = new Float32Array( [
+	expected = new Float32Array([
 		0.11,  // 3
 		-0.03, // 3
 		3.0,
@@ -197,7 +197,7 @@ tape( 'the `ndarray` method supports specifying a negative `cx` stride', functio
 		-0.19, // 1
 		7.0,
 		2.0
-	] );
+	]);
 	isApprox( t, viewX, expected, 1.0 );
 
 	t.end();
@@ -209,7 +209,7 @@ tape( 'the `ndarray` method supports a `cx` offset', function test( t ) {
 	var ca;
 	var cx;
 
-	cx = new Complex64Array( [
+	cx = new Complex64Array([
 		0.1,
 		0.1,
 		3.0,
@@ -222,13 +222,13 @@ tape( 'the `ndarray` method supports a `cx` offset', function test( t ) {
 		-0.3, // 2
 		7.0,  // 3
 		2.0   // 3
-	] );
+	]);
 	ca = new Complex64( 0.4, -0.7 );
 
 	cscal.ndarray( 3, ca, cx, 1, 3 );
 
 	viewX = new Float32Array( cx.buffer );
-	expected = new Float32Array( [
+	expected = new Float32Array([
 		0.1,
 		0.1,
 		3.0,
@@ -241,7 +241,7 @@ tape( 'the `ndarray` method supports a `cx` offset', function test( t ) {
 		-0.19, // 2
 		4.2,   // 3
 		-4.1   // 3
-	] );
+	]);
 	isApprox( t, viewX, expected, 5.0 );
 
 	t.end();
@@ -288,7 +288,7 @@ tape( 'the `ndarray` method supports complex access patterns', function test( t 
 	var ca;
 	var cx;
 
-	cx = new Complex64Array( [
+	cx = new Complex64Array([
 		0.1,
 		0.1,
 		3.0,
@@ -303,13 +303,13 @@ tape( 'the `ndarray` method supports complex access patterns', function test( t 
 		2.0,
 		2.0, // 2
 		3.0  // 2
-	] );
+	]);
 	ca = new Complex64( 0.4, -0.7 );
 
 	cscal.ndarray( 2, ca, cx, 3, 3 );
 
 	viewX = new Float32Array( cx.buffer );
-	expected = new Float32Array( [
+	expected = new Float32Array([
 		0.1,
 		0.1,
 		3.0,
@@ -324,7 +324,7 @@ tape( 'the `ndarray` method supports complex access patterns', function test( t 
 		2.0,
 		2.9,  // 2
 		-0.2  // 2
-	] );
+	]);
 	isApprox( t, viewX, expected, 5.0 );
 
 	t.end();

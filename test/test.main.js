@@ -77,7 +77,7 @@ tape( 'the `main` method scales elements from `cx` by `ca`', function test( t ) 
 	var ca;
 	var cx;
 
-	cx = new Complex64Array( [
+	cx = new Complex64Array([
 		0.3, // 1
 		0.1, // 1
 		0.5, // 2
@@ -86,13 +86,13 @@ tape( 'the `main` method scales elements from `cx` by `ca`', function test( t ) 
 		0.5, // 3
 		0.0, // 4
 		0.2  // 4
-	] );
+	]);
 	ca = new Complex64( 0.4, -0.7 );
 
 	cscal.main( 4, ca, cx, 1 );
 
 	viewX = new Float32Array( cx.buffer );
-	expected = new Float32Array( [
+	expected = new Float32Array([
 		0.19,  // 1
 		-0.17, // 1
 		0.2,   // 2
@@ -101,7 +101,7 @@ tape( 'the `main` method scales elements from `cx` by `ca`', function test( t ) 
 		0.2,   // 3
 		0.14,  // 4
 		0.08   // 4
-	] );
+	]);
 	isApprox( t, viewX, expected, 1.0 );
 
 	t.end();
@@ -113,7 +113,7 @@ tape( 'the `main` method supports specifying a `cx` stride', function test( t ) 
 	var ca;
 	var cx;
 
-	cx = new Complex64Array( [
+	cx = new Complex64Array([
 		0.1,  // 1
 		0.1,  // 1
 		3.0,
@@ -126,13 +126,13 @@ tape( 'the `main` method supports specifying a `cx` stride', function test( t ) 
 		-0.3, // 3
 		7.0,
 		2.0
-	] );
+	]);
 	ca = new Complex64( 0.4, -0.7 );
 
 	cscal.main( 3, ca, cx, 2 );
 
 	viewX = new Float32Array( cx.buffer );
-	expected = new Float32Array( [
+	expected = new Float32Array([
 		0.11,  // 1
 		-0.03, // 1
 		3.0,
@@ -145,7 +145,7 @@ tape( 'the `main` method supports specifying a `cx` stride', function test( t ) 
 		-0.19, // 3
 		7.0,
 		2.0
-	] );
+	]);
 	isApprox( t, viewX, expected, 1.0 );
 
 	t.end();
@@ -157,7 +157,7 @@ tape( 'the `main` method supports specifying a negative `cx` stride', function t
 	var ca;
 	var cx;
 
-	cx = new Complex64Array( [
+	cx = new Complex64Array([
 		0.1,  // 3
 		0.1,  // 3
 		3.0,
@@ -170,13 +170,13 @@ tape( 'the `main` method supports specifying a negative `cx` stride', function t
 		-0.3, // 1
 		7.0,
 		2.0
-	] );
+	]);
 	ca = new Complex64( 0.4, -0.7 );
 
 	cscal.main( 3, ca, cx, -2 );
 
 	viewX = new Float32Array( cx.buffer );
-	expected = new Float32Array( [
+	expected = new Float32Array([
 		0.11,  // 3
 		-0.03, // 3
 		3.0,
@@ -189,7 +189,7 @@ tape( 'the `main` method supports specifying a negative `cx` stride', function t
 		-0.19, // 1
 		7.0,
 		2.0
-	] );
+	]);
 	isApprox( t, viewX, expected, 1.0 );
 
 	t.end();
@@ -238,7 +238,7 @@ tape( 'the `main` method supports view offsets', function test( t ) {
 	var ca;
 
 	// Initial arrays...
-	cx0 = new Complex64Array( [
+	cx0 = new Complex64Array([
 		0.1,
 		-0.3,
 		8.0,  // 1
@@ -249,7 +249,7 @@ tape( 'the `main` method supports view offsets', function test( t ) {
 		5.0,  // 3
 		2.0,
 		3.0
-	] );
+	]);
 	ca = new Complex64( 0.4, -0.7 );
 
 	// Create offset views...
@@ -258,7 +258,7 @@ tape( 'the `main` method supports view offsets', function test( t ) {
 	cscal.main( 3, ca, cx1, 1 );
 
 	viewX = new Float32Array( cx0.buffer );
-	expected = new Float32Array( [
+	expected = new Float32Array([
 		0.1,
 		-0.3,
 		9.5,   // 1
@@ -269,7 +269,7 @@ tape( 'the `main` method supports view offsets', function test( t ) {
 		0.6,   // 3
 		2.0,
 		3.0
-	] );
+	]);
 	isApprox( t, viewX, expected, 1.0 );
 
 	t.end();
