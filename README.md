@@ -80,7 +80,6 @@ var ca = new Complex64( 2.0, 2.0 );
 // Perform operation:
 cscal.main( cx.length, ca, cx, 1 );
 // cx => <Complex64Array>[ -2.0, 6.0, -2.0, 14.0, -2.0, 22.0 ]
-
 ```
 
 The function has the following parameters:
@@ -105,7 +104,6 @@ var ca = new Complex64( 2.0, 0.0 );
 // Perform operation:
 cscal.main( 2, ca, cx, 2 );
 // cx => <Complex64Array>[ 2.0, 4.0, 3.0, 4.0, 10.0, 12.0 ]
-
 ```
 
 Note that indexing is relative to the first index. To introduce an offset, use [`typed array`][mdn-typed-array] views.
@@ -128,7 +126,6 @@ var cx1 = new Complex64Array( cx0.buffer, cx0.BYTES_PER_ELEMENT*1 ); // start at
 // Scales every other value from `cx1` by `ca`...
 cscal.main( 3, ca, cx1, 1 );
 // cx0 => <Complex64Array>[ 1.0, 2.0, -2.0, 14.0, -2.0, 22.0, -2.0, 30.0 ]
-
 ```
 
 #### cscal.ndarray( N, ca, cx, strideX, offsetX )
@@ -148,7 +145,6 @@ var ca = new Complex64( 2.0, 2.0 );
 // Perform operation:
 cscal.ndarray( cx.length, ca, cx, 1, 0 );
 // cx => <Complex64Array>[ -2.0, 6.0, -2.0, 14.0, -2.0, 22.0 ]
-
 ```
 
 The function has the following additional parameters:

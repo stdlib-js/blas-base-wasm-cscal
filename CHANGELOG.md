@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-04-02)
+## Unreleased (2025-04-03)
 
 <section class="features">
 
@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`770c8fa`](https://github.com/stdlib-js/stdlib/commit/770c8fa6962456db2eaa37b2ba2c1c7282a663ff) - **chore:** remove empty lines _(by Athan Reines)_
 -   [`ea11328`](https://github.com/stdlib-js/stdlib/commit/ea113289e9129ffd1f51176afed9b5c795e1de21) - **docs:** update examples for `blas/base/wasm/cscal` [(#6495)](https://github.com/stdlib-js/stdlib/pull/6495) _(by Rupa, Athan Reines)_
 -   [`a6c8cab`](https://github.com/stdlib-js/stdlib/commit/a6c8cab0f0e6ba351af643c9b5c814710bac5439) - **docs:** fix examples _(by Athan Reines)_
 -   [`8a80a81`](https://github.com/stdlib-js/stdlib/commit/8a80a811f4c4d710106c73b6381fe0d3ed2ab901) - **build:** generalize scripts to auto-update copyright year _(by Athan Reines)_
