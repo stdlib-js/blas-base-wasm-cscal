@@ -42,6 +42,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import cscal from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-cscal@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/blas-base-wasm-cscal/tags). For example,
+
+```javascript
 import cscal from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-cscal@v0.1.1-esm/index.mjs';
 ```
 
@@ -188,7 +193,7 @@ import bytesPerElement from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-
 import Float32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float32@esm/index.mjs';
 import Complex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@esm/index.mjs';
 import reinterpretComplex64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-reinterpret-complex64@esm/index.mjs';
-import cscal from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-cscal@v0.1.1-esm/index.mjs';
+import cscal from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-cscal@esm/index.mjs';
 
 // Create a new memory instance with an initial size of 10 pages (320KiB) and a maximum size of 100 pages (6.4MiB):
 var mem = new Memory({
@@ -256,7 +261,7 @@ import bytesPerElement from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-
 import Float32Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-float32@esm/index.mjs';
 import Complex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@esm/index.mjs';
 import reinterpretComplex64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-reinterpret-complex64@esm/index.mjs';
-import cscal from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-cscal@v0.1.1-esm/index.mjs';
+import cscal from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-cscal@esm/index.mjs';
 
 // Create a new memory instance with an initial size of 10 pages (320KiB) and a maximum size of 100 pages (6.4MiB):
 var mem = new Memory({
@@ -342,7 +347,7 @@ import oneTo from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-one-to@esm/index.
 import Complex64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float32-ctor@esm/index.mjs';
 import Complex64Array from 'https://cdn.jsdelivr.net/gh/stdlib-js/array-complex64@esm/index.mjs';
 import reinterpretComplex64 from 'https://cdn.jsdelivr.net/gh/stdlib-js/strided-base-reinterpret-complex64@esm/index.mjs';
-import cscal from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-cscal@v0.1.1-esm/index.mjs';
+import cscal from 'https://cdn.jsdelivr.net/gh/stdlib-js/blas-base-wasm-cscal@esm/index.mjs';
 
 // Specify a vector length:
 var N = 5;
