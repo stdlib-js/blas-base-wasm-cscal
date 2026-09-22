@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-08-27)
+## Unreleased (2026-09-22)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`e78f04d`](https://github.com/stdlib-js/stdlib/commit/e78f04d723599f35af5b3c1bed2454d89a26d44d) - **test:** migrate `blas/base/wasm/cscal` to ULP-based assertions [(#15188)](https://github.com/stdlib-js/stdlib/pull/15188) _(by Athan Reines, Philipp Burckhardt)_
 -   [`607bbc6`](https://github.com/stdlib-js/stdlib/commit/607bbc6e104c273e5b26cabfb21a8c06f3d5d375) - **build:** avoid false positives in ESLint rule `jsdoc-doctest-decimal-point` [(#14644)](https://github.com/stdlib-js/stdlib/pull/14644) _(by Philipp Burckhardt, Athan Reines)_
 -   [`94e67fd`](https://github.com/stdlib-js/stdlib/commit/94e67fd1ed8a206d4209c1071c378661cc9ab16b) - **build:** add scripts to insert license headers [(#13482)](https://github.com/stdlib-js/stdlib/pull/13482) _(by Prashant Kumar Yadav)_
 -   [`8ff59d6`](https://github.com/stdlib-js/stdlib/commit/8ff59d63eaa88d252f5404e3b3affdf5c66821d5) - **chore:** propagate `blas/*` JSDoc and `cscal` header fixes to siblings [(#12318)](https://github.com/stdlib-js/stdlib/pull/12318) _(by Philipp Burckhardt)_
